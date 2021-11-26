@@ -1,0 +1,33 @@
+@font-face {
+  font-family: exfont1;
+  src: url(Fonts/NHaasGroteskTXPro-55Rg.ttf);
+}
+
+.nav{font-family: 'Shippori Antique B1', sans-serif; font-size:15px; line-height: 140%; color:white; font-weight:400; letter-spacing:0.5px; }
+#S{position:absolute; font-family: 'Poppins', sans-serif; color:white; font-size:180px; position:absolute; left:14%;}
+#K{position:absolute; font-family: 'Poppins', sans-serif; color:white; font-size:180px; position:absolute; right:13%;}
+
+
+@keyframes float {
+	0% {
+
+		transform: translatey(0px);
+	}
+	50% {
+
+		transform: translatey(-20px);
+	}
+	100% {
+
+		transform: translatey(0px);
+	}
+}
+
+input:focus{
+    outline: none;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
