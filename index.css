@@ -33,9 +33,19 @@ html {
 }
 
 #part1{position:absolute; width:100%; height:110%; top:0%; left:0%; overflow:hidden; background:#0C7475;}
+#part1abt{position:absolute; width:100%; height:90%; top:0%; left:0%; overflow:hidden; background:#0C7475;}
 #nav{position:absolute; width:100%; height:80px;}
 #logo_1{position:relative; top:-15px; left:30px;}
 #logo{font-family: 'Do Hyeon', sans-serif; font-size:27px; z-index:6; position:absolute; color: white; left:40px; top:5px; letter-spacing:1px;}
+#mainbanabt{position:absolute; top:90px; width:100%; overflow:hidden; height:90%;}
+#logoabt{font-family: 'Do Hyeon', sans-serif; font-size:27px; z-index:6; position:absolute; color: white; left:40px; top:-12px; letter-spacing:1px;}
+#part1abtxt{position:relative;z-index:9; margin-top:20%; color:white; font-size:40px; font-family: 'Outfit', sans-serif; font-weight:600;}
+#ovrlayabt{position:absolute; top:90px; width:100%; overflow:hidden; height:90%; background:black; opacity:0.1;}
+#mainabtimg{position:absolute; width:100%; top:-200px;}
+#part2abt{position:absolute; top:70%; left:0%; width:100%; height:140%; background:white; font-family: 'Outfit', sans-serif; font-weight:600; color:#084b4c; font-size:22px; overflow:hidden;}
+#facedv{float:left; width:33%; height:300px; margin-left:;  margin-top:140px;}
+#part3abt{position:absolute; top:210%; left:0px; width:100%; height:60%; overflow:hidden;}
+#pt3abtimg{position:absolute; width:100%; top:-340px;}
 #nav_1{z-index:7; position:absolute; right:50px; top:30px; width:auto; height:100px;}
 #nav_1_1{font-family: 'Outfit', sans-serif; font-size: 14px; font-weight:400; color:white; line-height:110%; float:left;}
 #sgnin{margin-left:50px; font-family: 'Outfit', sans-serif; font-size: 14px; font-weight:400; color:white; line-height:110%; float:left; border:1px solid white; margin-top:0px; padding:12px; padding-left:18px;  padding-right:18px; border-radius:5px;}
@@ -46,6 +56,7 @@ html {
 #kmu{font-family: 'Outfit', sans-serif; color:white; font-weight:400; font-size:14px;}
 #Bsy{font-family: 'Outfit', sans-serif; color:#bfbfbf; font-weight:400; font-size:14px; line-height:150%;}
 #mainban{border-radius:10px; position:absolute; top:20%; right:-10%; width:70%;}
+#part1abt{position:absolute; width:100%; height:70%; top:0%; left:0%; overflow:hidden; background:#0C7475;}
 
 #part2{position:absolute; width:100%; height:110%; top:105%; left:0%; overflow:hidden; background:#F4F4F4;}
 #dli{color:#0C7475; font-size:40px; font-weight:600;}
@@ -91,13 +102,32 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);}
 #part7txt{position:relative; z-index:3; font-family: 'Outfit', sans-serif; color:white; display:inline; top:35%; font-size:45px; width:70%; font-weight:600; left:2%; line-height:110%;}
 #part7btn{position:absolute; top:100px; right:8%; width:250px; height:55px; background-color: #21D4FD;
 background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); display:inline;border-radius:3px;}
+.facefst{}
+#btm{}
+#tp{}
+#pt3abttt{position:relative;z-index:9; margin-top:10%; color:white; font-size:35px; font-family: 'Outfit', sans-serif; font-weight:500;}
+#pt3abtct{font-weight:400; font-size:25px;}
 @media only screen and (max-width: 550px) {
-	#mainban{border-radius:10px; position:absolute; top:80px; right:0%; width:100%;}
+#mainbanabt{position:absolute; top:80px; width:100%; overflow:hidden; height:100%;}
+#mainabtimg{position:absolute; height:130%; width:auto; top:-200px;}
+#logoabt{font-family: 'Do Hyeon', sans-serif; font-size:25px; z-index:6; position:absolute; color: white; left:38%; top:-15px; letter-spacing:1px; }
+#ovrlayabt{position:absolute; top:80px; width:100%; overflow:hidden; height:90%; background:black; opacity:0.2;}
+#part1abtxt{position:relative;z-index:9; margin-top:45%; color:white; font-size:35px; font-family: 'Outfit', sans-serif; font-weight:600;}
+#part1abt{position:absolute; width:100%; height:70%; top:0%; left:0%; overflow:hidden; background:#0C7475;}
+#part2abt{position:absolute; top:70%; left:0%; width:100%; height:280%; background:white; font-family: 'Outfit', sans-serif; font-weight:600; color:#084b4c; font-size:22px; overflow:hidden;}
+#facedv{float:left; width:100%; height:300px; margin-left:; margin-top:20px;}
+#btm{margin-bottom:250px;}
+#tp{ margin-top:-30%;}
+#part3abt{position:absolute; top:350%; left:0px; width:100%; height:55%; overflow:hidden;}
+#pt3abtimg{position:absolute; height:100%; top:0px;}
+#pt3abttt{position:relative;z-index:9; margin-top:10%; color:white; font-size:30px; font-family: 'Outfit', sans-serif; font-weight:500;}
+#pt3abtct{font-weight:400; font-size:20px;}
+
 #mainban{border-radius:10px; position:absolute; top:80px; right:0%; width:100%;}
-	#sgnin{margin-left:0px; position:absolute; right:-30px; top:-5px; font-size: 12px; font-weight:600; float:right; margin-top:0px; padding:9px; padding-left:12px; width:70px; padding-right:12px; border-radius:5px;}
+	#sgnin{margin-left:0px; position:absolute; right:-30px; top:-10px; font-size: 16px; font-weight:600; float:right; margin-top:0px; padding:9px; text-align:center; width:90px; border-radius:5px; border:1.5px solid white;}
  #nav_1_1{display:none;}
  #logo_1{position:relative; top:-10px; left:0px;}
- #logo{font-family: 'Do Hyeon', sans-serif; font-size:20px; z-index:6; position:absolute; color: white; left:38%; top:-5px; letter-spacing:1px; }
+ #logo{font-family: 'Do Hyeon', sans-serif; font-size:24px; z-index:6; position:absolute; color: white; left:38%; top:-10px; letter-spacing:1px; }
 #Welbox{position:absolute; top:35%; width:100%; color:white; z-index:3; background:#0C7475;}
 #welcome{font-size:25px; font-family: 'Playfair Display', serif; font-weight:500; margin-left:10%; width:80%;}
 
