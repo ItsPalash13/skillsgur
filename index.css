@@ -37,10 +37,10 @@ html {
 #nav{position:absolute; width:100%; height:80px;}
 #logo_1{position:relative; top:-15px; left:30px;}
 #logo{font-family: 'Do Hyeon', sans-serif; font-size:27px; z-index:6; position:absolute; color: white; left:40px; top:5px; letter-spacing:1px;}
-#mainbanabt{position:absolute; top:90px; width:100%; overflow:hidden; height:90%;}
+#mainbanabt{position:absolute; top:90px; width:100%; height:90%;}
 #logoabt{font-family: 'Do Hyeon', sans-serif; font-size:27px; z-index:6; position:absolute; color: white; left:40px; top:-12px; letter-spacing:1px;}
 #part1abtxt{position:relative;z-index:9; margin-top:20%; color:white; font-size:40px; font-family: 'Outfit', sans-serif; font-weight:600;}
-#ovrlayabt{position:absolute; top:90px; width:100%; overflow:hidden; height:90%; background:black; opacity:0.1;}
+#ovrlayabt{position:absolute; top:0px; width:100%; overflow:hidden; height:100%; background:black; opacity:0.1;}
 #mainabtimg{position:absolute; width:100%; top:-200px;}
 #part2abt{position:absolute; top:70%; left:0%; width:100%; height:140%; background:white; font-family: 'Outfit', sans-serif; font-weight:600; color:#084b4c; font-size:22px; overflow:hidden;}
 #facedv{float:left; width:33%; height:300px; margin-left:;  margin-top:140px;}
@@ -198,10 +198,10 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); display:inli
 
 	#menuct{display:block;}
 	.input2{position:relative; top:-15px; background:#191C21;}
-#mainbanabt{position:absolute; top:80px; width:100%; overflow:hidden; height:100%;}
+#mainbanabt{position:absolute; top:80px; width:100%; height:100%;}
 #mainabtimg{position:absolute; height:130%; width:auto; top:-200px;}
 #logoabt{font-family: 'Do Hyeon', sans-serif; font-size:25px; z-index:6; position:absolute; color: white; left:38%; top:-15px; letter-spacing:1px; }
-#ovrlayabt{position:absolute; top:80px; width:100%; overflow:hidden; height:90%; background:black; opacity:0.2;}
+#ovrlayabt{position:absolute; top:0px; width:100%; overflow:hidden; height:100%; background:black; opacity:0.2;}
 #part1abtxt{position:relative;z-index:9; margin-top:45%; color:white; font-size:35px; font-family: 'Outfit', sans-serif; font-weight:600;}
 #part1abt{position:absolute; width:100%; height:60%; top:0%; left:0%; overflow:hidden; background:#0C7475;}
 #part2abt{position:absolute; top:60%; left:0%; width:100%; height:300%; background:white; font-family: 'Outfit', sans-serif; font-weight:600; color:#084b4c; font-size:22px; overflow:hidden;}
