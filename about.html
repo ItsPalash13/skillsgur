@@ -22,14 +22,61 @@
 </head>
 <body style="overflow-x:hidden; background:#F4F4F4;">
 
+<div id="mobilenav" style="display:none; z-index:200; position:absolute; width:100%; left:0%; height:calc(100% - 87px); top:87px; background:white;">
+      <div style="border-bottom:0.1px solid #c2dcdc; float:left; width:95%; margin-top:10px; margin-left:3%; height:50px; font-family: 'Outfit', sans-serif; font-weight:500; color:#0C7475; font-size:16px; padding-left:15px;">
+        <p><a style="text-decoration:none;" href="index.html"><i class='fa fa-home' style="font-size:20px; margin-right:10px;"></i> Home</a></p>
+      </div>
+      <div style="border-bottom:0.1px solid #c2dcdc; float:left; width:95%; margin-top:10px; margin-left:3%; height:50px; font-family: 'Outfit', sans-serif; font-weight:500; color:#0C7475; font-size:16px; padding-left:15px;">
+        <p><i class='fas fa-book-open' style="font-size:15px; margin-right:10px;"></i> Courses</p>
+      </div>
+      <div style="border-bottom:0.1px solid #c2dcdc; float:left; width:95%; margin-top:10px; margin-left:3%; height:50px; font-family: 'Outfit', sans-serif; font-weight:500; color:#0C7475; font-size:16px; padding-left:15px;">
+        <p><a style="text-decoration:none;" href="about.html"><i class='fa fa-smile-o' style="font-size:18px; margin-right:10px;"></i> About</a></p>
+      </div>
+      <div style="border-bottom:0.1px solid #c2dcdc; float:left; width:95%; margin-top:10px; margin-left:3%; height:50px; font-family: 'Outfit', sans-serif; font-weight:500; color:#0C7475; font-size:16px; padding-left:15px;">
+        <p><i class='fa fa-user' style="font-size:18px; margin-right:10px;"></i> Sign In</p>
+      </div>
+    </div>
+
    <div id="part1abt" style="background:none;">
      
+      
+
      <div id="nav">
+      <i class="fa fa-window-close-o" style="display:none; z-index:100; position:absolute; top:20px; font-size:30px; left:13px; color:white;"></i>
       <div id="menuct" style="z-index:1;">
         <div id="menu"></div>
            <div id="menu" style="width:20px;"></div>
            <div id="menu"></div>
       </div>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+        $("#menuct").click(function(){
+            $("#mobilenav").css("display", "block");
+            $("#menuct").css("display", "none");
+            $(".fa-window-close-o").css("display", "block");
+        });
+        $(".fa-window-close-o").click(function(){
+            $("#mobilenav").css("display", "none");
+            $("#menuct").css("display", "block");
+            $(".fa-window-close-o").css("display", "none");
+        });
+
+      });
+      </script>
+      <script type="text/javascript">
+        $(window).on('resize', function(){
+          if ($(window).width() < 556) {
+            $(".fa-window-close-o").css("display", "none");
+            $("#mobilenav").css("display", "none");
+            $("#menuct").css("display", "none");
+          }
+          else{
+            $("#menuct").css("display", "none");
+          }
+        });
+      </script>
+
        <p id="logoabt"><b>&#60;SKILLS <br>
        <span id="logo_1">GURUKUL/></span> </b></p>
   <div id="nav_1">

@@ -32,6 +32,10 @@ html {
   scroll-behavior: smooth;
 }
 
+#leftsld{position:absolute; z-index:100; opacity:0.7; left:1%; top:420px; font-size:30px; color:#181818; cursor:pointer;}
+#rghtsld{position:absolute; z-index:100; opacity:0.7; right:1%; top:420px; font-size:30px; color:#181818; cursor:pointer;}
+
+
 #part1{position:absolute; width:100%; height:110%; top:0%; left:0%; overflow:hidden; background:#0C7475;}
 #part1abt{position:absolute; width:100%; height:90%; top:0%; left:0%; overflow:hidden; background:#0C7475;}
 #nav{position:absolute; width:100%; height:80px;}
@@ -62,7 +66,7 @@ html {
 #dli{color:#0C7475; font-size:40px; font-weight:600;}
 #pt2cnt{color:#0C7475; font-size:17px; font-family: 'Outfit', sans-serif; font-weight:600;}
 #p2citm{position:relative; display:inline; margin-left:50px;}
-#corss{position:absolute; top:40%; left:10%; height:300px; width:2000px;}
+#corss{position:absolute; top:40%; left:10%; height:300px; width:calc(380px*4);}
 
 #part3{position:absolute; width:100%; height:150%; top:215%; left:0%; overflow:hidden; background:#181818;}
 #swn{font-family: 'Outfit', sans-serif; color:white; font-size:14px; font-weight:500; margin-left:20px; color:#CD342E;}
@@ -109,8 +113,8 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); display:inli
   height: 2px;
   background-color: white;
   margin: 6px 0;}
-#menuct{display:none; position:absolute; left:10px; font-size:30px; top:25%; color: white}
-.input2{position:relative; top:-19px; background:#191C21;}
+#menuct{display:none; position:absolute; left:15px; font-size:30px; top:25%; color: white}
+.input2{position:relative; top:-20px; background:#191C21;}
 #pt3abttt{position:relative;z-index:9; margin-top:10%; color:white; font-size:35px; font-family: 'Outfit', sans-serif; font-weight:500;}
 #pt3abtct{font-weight:400; font-size:25px;}
 
@@ -154,6 +158,7 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); display:inli
 #trn{position:relative;z-index:9; margin-top:5%; color:white; font-size:17px; font-family: 'Outfit', sans-serif; font-weight:500; border:1px solid white; padding:10px; width:150px;}
 
 @media only screen and (max-width: 1024px) {
+
 	#part1{position:absolute; width:100%; height:50%; top:0%; left:0%; overflow:hidden; background:#0C7475;}
 #welcome{font-size:25px; font-family: 'Playfair Display', serif; font-weight:500; margin-left:10%; width:80%;}
 #mainban{border-radius:10px; position:absolute; top:8%; left:42%; right:auto; width:90%;}
@@ -194,8 +199,9 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); display:inli
 
 
 @media only screen and (max-width: 550px) {
+	#leftsld{position:absolute; z-index:100; opacity:0.7; left:1%; top:400px; font-size:25px; color:#181818; cursor:pointer;}
+#rghtsld{position:absolute; z-index:100; opacity:0.7; right:1%; top:400px; font-size:25px; color:#181818; cursor:pointer;}
 	#part1{position:absolute; width:100%; height:110%; top:0%; left:0%; overflow:hidden; background:#0C7475;}
-
 	#menuct{display:block;}
 	.input2{position:relative; top:-15px; background:#191C21;}
 #mainbanabt{position:absolute; top:80px; width:100%; height:100%;}
@@ -226,8 +232,8 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); display:inli
 #part2{position:absolute; width:100%; height:100.5%; top:105%; left:0%; overflow:hidden; background:#F4F4F4;}
 #dli{color:#0C7475; font-size:40px; font-weight:600; position:relative; top:-80px; line-height:100%;}
 #pt2cnt{color:#0C7475; font-size:17px; font-family: 'Outfit', sans-serif; font-weight:600; position:absolute; top:170px; width:100%;}
-.p2citm_d{position:relative; top:10px; left:-10px;}
-#corss{position:absolute; top:270px; left:1%; height:300px; width:2000px;}
+.p2citm_d{position:relative; top:15px;}
+#corss{position:absolute; top:270px; left:4px; height:300px; width:2000px;}
 
 #part3{position:absolute; width:100%; height:1230px; top:205%; left:0%; overflow:hidden; background:#181818;}
 #olf{font-family: 'Outfit', sans-serif; color:white; margin-top:-10px; font-size:30px; font-weight:600; margin-left:20px;}

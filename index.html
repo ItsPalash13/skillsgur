@@ -16,20 +16,71 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/ff9c3085d9.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,100&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 
 </head>
 <body style="overflow-x:hidden; background:#F4F4F4;">
 
+    <div id="mobilenav" style="display:none; z-index:200; position:absolute; width:100%; left:0%; height:calc(100% - 87px); top:87px; background:white;">
+      <div style="border-bottom:0.1px solid #c2dcdc; float:left; width:95%; margin-top:10px; margin-left:3%; height:50px; font-family: 'Outfit', sans-serif; font-weight:500; color:#0C7475; font-size:16px; padding-left:15px;">
+        <p><a style="text-decoration:none;" href="index.html"><i class='fa fa-home' style="font-size:20px; margin-right:10px;"></i> Home</a></p>
+      </div>
+      <div style="border-bottom:0.1px solid #c2dcdc; float:left; width:95%; margin-top:10px; margin-left:3%; height:50px; font-family: 'Outfit', sans-serif; font-weight:500; color:#0C7475; font-size:16px; padding-left:15px;">
+        <p><i class='fas fa-book-open' style="font-size:15px; margin-right:10px;"></i> Courses</p>
+      </div>
+      <div style="border-bottom:0.1px solid #c2dcdc; float:left; width:95%; margin-top:10px; margin-left:3%; height:50px; font-family: 'Outfit', sans-serif; font-weight:500; color:#0C7475; font-size:16px; padding-left:15px;">
+        <p><a style="text-decoration:none;" href="about.html"><i class='fa fa-smile-o' style="font-size:18px; margin-right:10px;"></i> About</a></p>
+      </div>
+      <div style="border-bottom:0.1px solid #c2dcdc; float:left; width:95%; margin-top:10px; margin-left:3%; height:50px; font-family: 'Outfit', sans-serif; font-weight:500; color:#0C7475; font-size:16px; padding-left:15px;">
+        <p><i class='fa fa-user' style="font-size:18px; margin-right:10px;"></i> Sign In</p>
+      </div>
+    </div>
+
    <div id="part1">
      
      <div id="nav">
+      <i class="fa fa-window-close-o" style="display:none; position:absolute; top:20px; font-size:30px; left:13px; color:white;"></i>
+      <div id="menuct">
+        <div id="menu"></div>
+           <div id="menu" style="width:20px;"></div>
+           <div id="menu"></div>
+      </div>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+        $("#menuct").click(function(){
+            $("#mobilenav").css("display", "block");
+            $("#menuct").css("display", "none");
+            $(".fa-window-close-o").css("display", "block");
+        });
+        $(".fa-window-close-o").click(function(){
+            $("#mobilenav").css("display", "none");
+            $("#menuct").css("display", "block");
+            $(".fa-window-close-o").css("display", "none");
+        });
+
+      });
+      </script>
+      <script type="text/javascript">
+        $(window).on('resize', function(){
+          if ($(window).width() < 556) {
+            $(".fa-window-close-o").css("display", "none");
+            $("#mobilenav").css("display", "none");
+            $("#menuct").css("display", "none");
+          }
+          else{
+            $("#menuct").css("display", "none");
+          }
+        });
+      </script>
+
        <p id="logo"><b>&#60;SKILLS <br>
        <span id="logo_1">GURUKUL/></span> </b></p>
   <div id="nav_1">
   <p id="nav_1_1">COURSES</p>
-  <p id="nav_1_1" style="margin-left:50px;">PORTFOLIO</p>
+  <p id="nav_1_1" style="margin-left:50px;"><a style="text-decoration:none;" href="about.html">ABOUT</a></p>
    <p id="sgnin">SIGN IN</p>
+
      </div>
    </div>
   
@@ -38,7 +89,7 @@
     Welcome to dolor sit amet<br> consectetur adipiscing <br> nec odio.
 <center>
   <input type="text" name="" id="input1" placeholder="Userame" style="background:#f2f2f2; color: black;">
-  <input type="text" name="" id="input1" placeholder="Enter Your Email" style="margin-top:10px; background:#191C21;"><br>
+  <input type="text" name="" id="input1" class="input2" placeholder="Enter Your Email" style=""><br>
     <button type="submit" id="cya">Create your account</button>
 </center>
 <div style="width:300px; line-height:40%; margin-top:30px;">
@@ -59,14 +110,15 @@
   <path fill="#181818" fill-opacity="1" d="M0,160L20,154.7C40,149,80,139,120,154.7C160,171,200,213,240,197.3C280,181,320,107,360,69.3C400,32,440,32,480,80C520,128,560,224,600,256C640,288,680,256,720,240C760,224,800,224,840,202.7C880,181,920,139,960,133.3C1000,128,1040,160,1080,186.7C1120,213,1160,235,1200,208C1240,181,1280,107,1320,74.7C1360,43,1400,53,1420,58.7L1440,64L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path>
 </svg>
  <center id="dli">Discover Lorem ipsum</center><br>
-   <center id="pt2cnt">
+   <center id="pt2cnt" style="">
 <div id="p2citm" style="color:#1B2C44; border-bottom:2px solid #1B2C44; margin-left:0px;">All Categories</div>
 <div id="p2citm">Coding</div>
-<div id="p2citm">Management</div>
-<div id="p2citm" class="p2citm_d">Business</div>
-<div id="p2citm" class="p2citm_d">Public Speaking</div>
+<div id="p2citm" style="opacity:0.4;">Management</div>
+<div id="p2citm" style="opacity:0.4;" class="p2citm_d">Business</div>
+<div id="p2citm" style="opacity:0.4;" class="p2citm_d">Public Speaking</div>
 </center>
-
+<i class="fa fa-chevron-circle-left" id="leftsld"></i>
+<i class="fa fa-chevron-circle-right" id="rghtsld"></i>
   <div id="corss">
 
     <div style="float:left; margin-left:30px; height:100%; width:350px; border-radius:10px; overflow:hidden;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background:white;">
@@ -92,14 +144,41 @@
 
      <div style="float:left; margin-left:30px; height:100%; width:350px; border-radius:10px; overflow:hidden;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background:white;">
       <div style="position:relative; top:0px; left:0px; height:70%; width:100%; overflow:hidden;">
-        <img src="Images/t2.jpg" style="width:100%;">
+        <img src="Images/t4.jpg" style="width:100%;">
       </div>
       <center style="font-family: 'Outfit', sans-serif; color:#074040; margin-top:10px; width:95%;font-weight:600;">Lorem ipsum dolor sit amet consectetur adipiscing elit.<br><span style="font-size:12px; position:relative; top:7px;">By Palash Vishwas</span></center>
     </div>
 
   </div>
 </div>
- 
+<script type="text/javascript">
+if ($(window).width() < 556) {
+   rs=3;
+   ls=0;
+}
+else{
+  rs=1;
+ls=0;
+}
+
+  $(document).ready(function(){
+    $(".fa-chevron-circle-right").click(function(){
+      if (rs!=0){
+        $("#corss").animate({left: "-=381px"},"slow");
+        rs-=1;
+        ls+=1
+      }
+  });
+$(".fa-chevron-circle-left").click(function(){
+      if (ls!=0){
+        $("#corss").animate({left: "+=381px"},"slow");
+        ls-=1;
+        rs+=1;
+      }
+  });
+
+});
+</script> 
 
   <div id="part3">
     <p id="swn">SEE WHAT'S NEW</p>
@@ -107,7 +186,7 @@
 
     <div id="p3bigban">
       <div id="p3bigban_1">
-        <p id="p31txt1">Create better cloud outcomes with hands-on experience</p>
+        <p id="p31txt1">Lorem ipsum dolor sit amet consecte adipiscing elit</p>
         <p id="p31txt2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         <p style="font-family: 'Outfit', sans-serif; color:#e6e6e6; margin-top:0px; font-size:16px; font-weight:600; margin-left:20px; padding-right:20px;">Learn More  <i class="fa fa-angle-right" style="position:relative; top:2px; color: #0C7475;"></i></p>
       </div>
@@ -119,17 +198,17 @@
 
 
     <div id="p3smban">
-        <p id="p3smbantt">Make lasting workflow improvements with insights from your Jira</p>
+        <p id="p3smbantt">Frontend Lorem ipsum dolor sit amet consecte adipiscing elit</p>
         <p id="p3smbanct">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <p id="lrnmr">Learn More  <i class="fa fa-angle-right" style="position:relative; top:2px; color: #0C7475;"></i></p>
       </div>
       <div id="p3smban">
-        <p id="p3smbantt">Make lasting workflow improvements with insights from your Jira</p>
+        <p id="p3smbantt">Backend Lorem ipsum dolor sit amet consecte adipiscing elit</p>
         <p id="p3smbanct">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <p id="lrnmr">Learn More  <i class="fa fa-angle-right" style="position:relative; top:2px; color: #0C7475;"></i></p>
       </div>
-      <div id="p3smban">n, 
-        <p id="p3smbantt">Make lasting workflow improvements with insights from your Jira</p>
+      <div id="p3smban">
+        <p id="p3smbantt">Python Lorem ipsum dolor sit amet consecte adipiscing elit</p>
         <p id="p3smbanct">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <p id="lrnmr">Learn More  <i class="fa fa-angle-right" style="position:relative; top:2px; color: #0C7475;"></i></p>
       </div>
@@ -142,7 +221,7 @@
      <div id="pt4ban">
        <img src="Images/Slide1.jpg" id="pt4banimg">
        <div style="z-index:0; position:absolute; top:0px; left:0px; width:100%; height:100%;background-image: linear-gradient(90deg, rgba(0,0,0,0.5554796918767507) 0%, rgba(255,255,255,0) 71%, rgba(255,255,255,0) 96%);"></div>
-       <p id="ptbantt">Develop Gaming Lorem ipsum dolor.<br>
+       <p id="ptbantt">We SkillsGurukul<br> Lorem ipsum dolor.<br>
        </p>
         <p id="ptbanct">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <div id="ptbanbtn">
@@ -165,7 +244,7 @@
  <div id="part6">
      <div style="position:absolute; width:100%; height:100%; top:0%; left:0%; overflow:hidden;">
        <div id="part6pt2">
-<p id="part6pt61">Node.js is an open-source, cross-platform, back-end JavaScript runtime environment.<br>
+<p id="part6pt61">Web Developement Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod tempor.<br>
        </p>
         <p id="part6pt62">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <div id="glc">
@@ -181,10 +260,48 @@
 
    <div id="part7">
     
-     <p id="part7txt">Lorem ipsum dolor sit amet.<br> </p>
+     <p id="part7txt" style="font-weight:500;">Lorem ipsum dolor sit amet.<br> </p>
 <div id="part7btn">
           <center style="color: white; font-family: 'Outfit', sans-serif; font-weight:600; font-size:19px; position:relative; left:0%; top:12px;">Try For Free</center></div>
    </div>
 
+
+<div id="part8">
+  <div id="part8pt1">
+    <center id="edu"><span id="eduleftq" style="color:#cccccc;"><i class="fa fa-quote-left"></i></span> EDUCATION IS LOREM IPSUM DOLOR</center>
+  </div>
+   <div id="part8pt2">
+
+  <p id="subsus">SUBSCRIBE US</p>
+
+<button type="submit" name="" id="ok">OK</button>
+
+    <input type="text" name="" placeholder="Email" id="subsmail">
+
+
+
+    <p id="hashtab">FOLLOW #SKILLSGURUKUL</p>
+    <div id="socialcnt">
+      <i class="fa fa-facebook" id="socialicons"></i>
+  <i class="fa fa-instagram" id="socialicons"></i>
+  <i class="fa fa-twitter" id="socialicons"></i>
+  <i class="fa fa-github" id="socialicons"></i>
+  <i class="fa fa-linkedin" id="socialicons"></i>
+    </div>
+   
+
+   </div>
+<div id="part3pt3">
+
+  <center style="position:relative; top:50px; width:98%;">
+    <div id="footnav" style="margin-left:0;">HOME</div>
+    <div id="footnav" style="">COURSES</div>
+    <div id="footnav" style="">PORTFOLIO</div>
+    <div id="footnav" style="">SIGN IN</div>
+    <div id="footnav" style="">BLOG</div>
+
+  </center>
+</div>
+</div>
 </body>
 </html>
